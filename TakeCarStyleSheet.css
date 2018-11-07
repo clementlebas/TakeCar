@@ -1,22 +1,28 @@
 ﻿#navbar {
     overflow: hidden;
-    background-color: #8C7A86;
+    background-color: rgba(140, 122, 134, 0.90);
     border-radius: 7px;
 }
 
     /* Navbar links */
-    #navbar>a {
+#navbar>a {
         float: right;
         display: block;
         color: #f2f2f2;
         text-align: center;
         text-decoration: none;
     }
-    #navbar a {
-    padding: 15px;
+
+#navbar > a:hover {
+   background-color: rgba(98, 209, 192, 0.90)
     }
+
+
+#navbar a {
+    padding: 15px
+}
         /* Page content */
-        .content {
+.content {
     padding: 16px;
 }
 
@@ -72,9 +78,40 @@ button {
     cursor: pointer;
 }
 
-input {
+input{
+    text-align: left;
+    margin-top: 4px;
+    border: none;
+    border-bottom: 2px solid #62d1c0;
+}
+
+select {
     text-align: center;
     margin-top: 4px;
     border: none;
     border-bottom: 2px solid #62d1c0;
+}
+
+.InscriptionPage {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(140, 122, 134, 0.95);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ConnexionPage {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(140, 122, 134, 0.95);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#overlay {
+    position: absolute;
+    top: 70px;
+    width: 95%;
+    height: 83%;
+    z-index: 1000;
 }
