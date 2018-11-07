@@ -79,9 +79,22 @@ input {
     border-bottom: 2px solid #62d1c0;
 }
 
+.cadreForm{
+	text-align:center;
+	border: white;
+}
+
+.colonneGauche{
+	float:left;
+}
+/*.colonneDroite{
+	float:left;
+}*/
+
 #myForm {
-	/*width:500px;*/
+	width:500px;
 	position:absolute;
+	text-align:center;
 	padding-left:800px;
 	padding-top:50px;
 }
@@ -106,11 +119,8 @@ h1{
 	text-decoration: underline;
 }
 
-select option{
-	width:100px;
+select {
+	width:145px;
 }
-
-
-
 
 
