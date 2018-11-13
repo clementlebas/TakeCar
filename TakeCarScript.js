@@ -22,4 +22,18 @@ $(document).ready(function(){
         $('#overlay').hide('3000', function () { $('.ConnexionPage').removeAttr("id"); });
     });
 
+    $('#pass2').keyup(function () {
+        $(this).append("Hello")
+        if ($('#pass1').val() == $('#pass2').val()) {
+            $('#validpass').hide();
+            $('#pass2').removeAttr("class");
+            $('#suscribe').removeAttr('Class');
+        }
+        else {
+            $('#pass2').addClass("wrongpass");
+            $('#suscribe').addClass("notvalidButton");
+            $('#validpass').show();
+        }
+    });
+
 });
